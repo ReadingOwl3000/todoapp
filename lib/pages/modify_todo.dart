@@ -5,10 +5,10 @@ import 'package:marie/todo.dart';
 import 'package:provider/provider.dart';
 
 class ToDoContextDialog extends StatelessWidget {
-  ToDoContextDialog(this.element, {super.key});
+  const ToDoContextDialog(this.element, {super.key});
   static show(BuildContext context, element) =>
       showDialog(context: context, builder: (_) => ToDoContextDialog(element));
-  late Todo element;
+  final Todo element;
   @override
   Widget build(BuildContext context) {
     return Dialog(

@@ -6,6 +6,7 @@ import 'package:marie/pages/modify_todo.dart';
 import 'package:marie/todo.dart';
 import 'package:provider/provider.dart';
 
+//TODO: update readme
 void main() {
   runApp(ChangeNotifierProvider(
     create: (_) => DarkLightModeChanger()..getModePrefs(),

@@ -4,8 +4,8 @@ import 'package:marie/todo.dart';
 import 'package:provider/provider.dart';
 
 class CreateToDoDialog extends StatefulWidget {
-  late Todo toEditToDo;
-  CreateToDoDialog(this.toEditToDo, {super.key});
+  final Todo toEditToDo;
+  const CreateToDoDialog(this.toEditToDo, {super.key});
   static Future<T?> show<T>(BuildContext context, toEditToDo) async =>
       await showDialog(
           context: context,
